@@ -1,6 +1,7 @@
 # External
-import subprocess # module for running subprocesses from python
-import shlex # lexical analysis for splitting command like shell
+import subprocess  # module for running subprocesses from python
+import shlex  # lexical analysis for splitting command like shell
+
 
 class Process:
 
@@ -15,6 +16,7 @@ class Process:
         if process.returncode:
             raise ProcessException(process.returncode)
         return out
+
 
 class ProcessException(Exception):
 
